@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(42, 57, 104);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 12px 12px 12px 12px;
+    background-color: rgb(15, 21, 39);
+    color: white;
+    display: flex;
+    z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 9px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.minheight {
+    min-height: 8vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    margin: 6px 6px;
+}
+
+.container .box {
+    margin-top: 2%;
+    width: 300px;
+    max-height: max-content;
+    padding: 20px 20px 20px 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(98, 91, 91);
+}
+
+.container .box input {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.container .box button {
+    margin: 9px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 6px 6px 6px 6px;
+    border: 1px solid rgb(98, 91, 91);
+    outline: none;
+    background-color: rgb(2, 17, 62);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#output {
+    width: 80vw;
+    max-height: max-content;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+#output img {
+    width: 100%;
+    height: 100%;
+    margin: 8px 0;
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:326px) {
+    .container .box {
+        margin-top: 2%;
+        width: 248px;
+        max-height: max-content;
+        padding: 20px 20px 20px 20px;
+        border-radius: 6px;
+        border: 1px solid rgb(98, 91, 91);
+    }
+}
+
+#output .divn {
+    margin: 8px 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#rl {
+    outline: 2px solid lightblue;
+    border: 1px solid blueviolet;
+    border-radius: 2px;
+    color: black;
+}
+
+#output iframe{
+   overflow: hidden;
+   width: 100%;
+   border: none;
+   height: 400vh;
+   display: none;
+}
+footer{
+    background:rgb(2, 15, 52);
+    color: white;
+    padding: 16px 16px 16px 16px;
+    font-size: 22px;
+    font-weight: 700;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer center{
+    cursor: pointer;
+}

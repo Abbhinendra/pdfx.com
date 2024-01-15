@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Pdf Tool</title>
+</head>
+<body>
+ <nav>
+    <ul>
+        <li>Home</li>
+    </ul>
+ </nav> 
+ <div class="minheight">
+
+ </div>  
+ <div class="container">
+    <div class="box">
+        <h2 style="color: white;text-align: center;">Image To Pdf</h2>
+        <br>
+        <input type="file" multiple="multiple" accept=".jpg,.jpeg,.png,.gif" id="file">
+        <button id="btn">Generate</button>
+    </div>
+    <div class="box">
+        <h2 style="color: white;text-align: center;">File To Pdf</h2>
+        <br>
+        <input type="file" multiple="multiple" accept=".html,.css,.js,.json,.pdf,.php,.txt,.doc,.ppt,.xls" id="file1">
+        <button id="btn1">Generate</button>
+    </div>
+
+    <div class="box">
+        <h2 style="color: white;text-align: center;">Url To Pdf</h2>
+        <br>
+        <input type="url" id="rl" placeholder="Enter Your url" required>
+        <button id="btn2">Generate</button>
+    </div>
+    <div class="box" id="text-box">
+        <h2 style="color: white;text-align: center;">Text To Pdf</h2>
+        <br>
+        <textarea style="resize: none; font-size: 20px;font-weight: 700; color:black; width:100%; height: 180px; padding: 6px 6px 6px 6px; outline: 1px solid blueviolet; margin: auto; border: none;" name="" id="area" cols="30" rows="10" required placeholder="Enter Your Text Here"></textarea>
+        <button id="text">Generate</button>
+    </div>
+ </div>
+ <div id="output">
+
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <footer>
+    <center>Pdfx.com</center>
+ </footer>
+</body>
+<script src="main.js"></script>
+</html>
